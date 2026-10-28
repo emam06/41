@@ -1,7 +1,7 @@
 import qrcode, re, pathlib
 from qrcode.constants import ERROR_CORRECT_Q
 
-URL = "https://qrco.de/bewHYA"   # same link the original QR encodes
+URL = "https://m-techapp.com/m/chill/"   # cafe menu link
 q = qrcode.QRCode(error_correction=ERROR_CORRECT_Q, border=0, box_size=1)
 q.add_data(URL); q.make(fit=True)
 m = q.get_matrix(); n = len(m)
